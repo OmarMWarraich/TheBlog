@@ -22,8 +22,8 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
                              title: @post.title, user_id: @post.user_id } }
     end
 
-  # rubocop : enable Layout/LineLength
-  
+    # rubocop : enable Layout/LineLength
+
     assert_redirected_to post_url(Post.last)
   end
 
